@@ -1,0 +1,6 @@
+{
+  "name": "كورة كل جمعة",
+  "description": "تطبيق تنظيم مباريات كرة القدم الأسبوعية بين الأصدقاء، تكوين الفرق بالذكاء الاصطناعي، وإدارة الإحصائيات والجوائز.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
