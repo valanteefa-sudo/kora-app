@@ -23,8 +23,10 @@ jobs:
         with:
           gradle-version: '9.3.1'
 
-      - name: Create .env file
-        run: echo "GEMINI_API_KEY=dummy_key" > kora_project/.env
+      - name: Create env files
+        run: |
+          echo "GEMINI_API_KEY=dummy_key" > kora_project/.env
+          echo "GEMINI_API_KEY=dummy_key" > kora_project/.env.example
 
       - name: Build debug APK
         run: |
