@@ -2,7 +2,7 @@ name: Build APK
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -21,7 +21,7 @@ jobs:
       - name: Grant execute permission for gradlew
         run: |
           if [ ! -f "kora_project/gradlew" ]; then
-            cd kora_project && gradle wrapper && cd ..
+            cd kora_project && gradle wrapper --gradle-version 9.3.1 && cd ..
           fi
           chmod +x kora_project/gradlew
 
